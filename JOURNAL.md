@@ -1,6 +1,6 @@
 ---
-title: "Rabbit Chaser"
+title: "Highway Helper"
 author: "Allen"
-description: "RC car that can outrun a rabbit to stop them from eating stuff in my garden"
+description: "Display that reflects off the windshield to display speed, dangers, etc"
 created_at: "2025-05-28"
 ---
