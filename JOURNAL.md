@@ -44,4 +44,16 @@ I decided to use the RT9992 power management IC, because while the RK808 seems l
 
 Time Spent: 5h
 
-**TOTAL TIME SPENT: 7h**
+I spent a lot of time researching power management and decoupling and I started working on it.
+
+Here's my chain of decoupling capacitors for every single VDDQ pin on the RAM (many many more coming soon) 
+
+![image](https://github.com/user-attachments/assets/a1504b5e-b6b5-476d-b270-9c7eb9104e16)
+
+Also started working on the feedback stuff for the RT9992 buck conversion with a very cool 22 milliohm inductor I found on LCSC (also one of the cheapest 2.2uH inductors). The buck converters are pretty interesting and they seem complicated but they are actually pretty simple, you just have to create a voltage divider at the feedback pin to change the voltage. That is pretty cool.
+
+![image](https://github.com/user-attachments/assets/a6fda9e8-c734-4aad-929f-4f7a6b896ccc)
+
+Time Spent: 2h
+
+**TOTAL TIME SPENT: 9h**
