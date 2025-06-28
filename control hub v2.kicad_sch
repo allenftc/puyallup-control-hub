@@ -1,0 +1,140 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "383d5932-50d3-4da9-a710-a7a61a84ffcc")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 22.86 88.9)
+		(size 144.78 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7bc57775-885d-46a6-b983-1f9708e73e3c")
+		(property "Sheetname" "Memory"
+			(at 22.86 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "memory.kicad_sch"
+			(at 22.86 131.3946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "control hub v2"
+				(path "/383d5932-50d3-4da9-a710-a7a61a84ffcc"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 210.82 45.72)
+		(size 41.91 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b18e82e9-d3df-4852-9f7c-62a0516d528f")
+		(property "Sheetname" "Peripherals"
+			(at 210.82 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 210.82 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "control hub v2"
+				(path "/383d5932-50d3-4da9-a710-a7a61a84ffcc"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 209.55 106.68)
+		(size 40.64 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d275be74-b7c0-4bb6-95b0-0fb05390c644")
+		(property "Sheetname" "Power"
+			(at 209.55 105.9684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 209.55 123.7746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "control hub v2"
+				(path "/383d5932-50d3-4da9-a710-a7a61a84ffcc"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
