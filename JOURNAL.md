@@ -44,6 +44,8 @@ I decided to use the RT9992 power management IC, because while the RK808 seems l
 
 Time Spent: 5h
 
+# June 28
+
 I spent a lot of time researching power management and decoupling and I started working on it.
 
 Here's my chain of decoupling capacitors for every single VDDQ pin on the RAM (many many more coming soon) 
@@ -56,4 +58,22 @@ Also started working on the feedback stuff for the RT9992 buck conversion with a
 
 Time Spent: 2h
 
-**TOTAL TIME SPENT: 9h**
+# June 29
+
+I kept working on the power management, and I realized that this is actually pretty complex because I want to be able to support both a 3.7V LiPo battery as well as a larger 12V battery that would be used in FTC. However, this RT9992 only works with up to 7V, (although the channel 6 power apparently accepts up to 21V???). I plan on adding another step down converter to get the 12V down to like 4V. I need it to be below 5V because I want 5V output and I am running out of step down channels so it needs to be step up.
+
+Channel 2 has been added. I changed channel 1 to the 5V because I realized it is step-up only. Channel 2 needs to be 0.9V which follows the formula in the datasheet, Vout = (1+R8/R9) * 0.8V. I don't know what capacitors to use because the datasheet lists capacitor values that seem to change nonlinearly with the voltage output. I must understand more.
+
+![image](https://github.com/user-attachments/assets/1b5b3b45-ede0-41ea-96da-bb4e082e705b)
+
+More decoupling!
+
+![image](https://github.com/user-attachments/assets/6e4c653b-e7b2-4201-b27b-a56b38007e34)
+
+Also a switch between the 3.7V battery, nothing, and the 12V battery. Problem is, if they are both assumed to be 3-4V at the same place, the step down converter for the big battery would always be powered which I don't want (although the output would have zero load so idk how much it actually matters).
+
+![image](https://github.com/user-attachments/assets/ffb54c98-84e9-43ae-b2d4-a5314cc8f27a)
+
+Time Spent: 30m
+
+**TOTAL TIME SPENT: 9.5h**
